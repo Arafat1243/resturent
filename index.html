@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Olea</title>
+    <!--bootstrap style  -->
+    <link rel="stylesheet" href="assest/bootstrap/css/bootstrap.min.css">
+    <!-- fontawsome css -->
+    <link rel="stylesheet" href="assest/fontawsome/css/all.min.css">
+    <!-- datepicker -->
+    <link rel="stylesheet" href="assest/bootstrap/css/bootstrap-datepicker.css">
+    <!-- timepicker -->
+    <link rel="stylesheet" href="custom/css/tpicker.css">
+    <!-- lightbox -->
+    <link rel="stylesheet" href="custom/css/lightbox.css">
+    <!-- custom style -->
+    <link rel="stylesheet" href="custom/css/style.css">
+
+</head>
+
+<body>
+    <!-- begain to navbar -->
+    <nav class="ftco-navbar navbar navbar-expand-lg navbar-dark bg-dark">
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> -->
+
+        <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
+        <ul class="ftco-nav navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#ftco-home">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#ftco-about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#ftco-menu">Menu</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#ftco-gallery">Gallery</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#ftco-contact">Contact us</a>
+            </li>
+        </ul>
+        <!-- </div> -->
+        <div class="ftco-navbrand">
+            <a href="" title="Logo">
+                <img src="assest/images/logo.png" alt="logo">
+            </a>
+        </div>
+        <ul class="navbar-nav ml-auto ftco-nav-leftcontent">
+            <li class="nav-item">
+                <button id="btnTable" data-toggle="modal" type="button" data-target="#reservationModal"><img class="tableIcon" src="assest/images/tableIcon.png" alt="" srcset=""></button>
+            </li>
+            <li class="nav-item">
+                <button id="btnCart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cartItemCount" class="badge badge-light">2</span>
+                </button>
+            </li>
+            <li class="nav-item">
+                <button id="btnSignUp" data-toggle="modal" type="button" data-target="#registerModal"><i class="fas fa-user"></i></button>
+            </li>
+        </ul>
+    </nav>
+    <!-- end top nevbar -->
+    <!-- mobile navbar begain -->
+    <div class="ftco-navbar2">
+        <a href="#ftco-home"><i class="fas fa-home"></i> <samp>Home</samp></a>
+        <a href="#ftco-about">
+            <i class="fas fa-info"></i>
+            <samp>About</samp>
+        </a>
+        <a href="#ftco-menu" class="active"><i class="fas fa-bars"></i><samp>Menu</samp></a>
+
+        <a href="#ftco-gallery"><i class="fas fa-images"></i><samp>Gallery</samp></a>
+
+
+        <a href="#ftco-contact">
+            <i class="fas fa-id-badge"></i>
+            <samp>Contact</samp>
+        </a>
+    </div>
+    <!-- mobile navbar end -->
+    <!-- begain home -->
+    <div id="ftco-home" class="section" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('assest/images/slidePic.jpg');">
+        <div class="HeroContent">
+            <h1 class="HeroSuperText">GET IT DELIVERED</h1>
+            <h1 class="HeroHeading">YOUR WAY</h1>
+        </div>
+    </div>
+    <!-- begain about -->
+    <div id="ftco-about" class="section">
+        <div class="container">
+            <h1 class="section-heading">_ <samp>A</samp>bout us _</h1>
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <img src="assest/images/about-chef.png" class="ftco-about-img rounded-circle shadow " alt="">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolores velit iure! Minima aliquid voluptates, quia alias, vel fugiat expedita vero autem blanditiis quibusdam veritatis cum nam dolorem dolore quas? Lorem, ipsum dolor sit
+                        amet consectetur adipisicing elit. Ex in quaerat amet, impedit, tempore qui assumenda quidem illum tempora quisquam praesentium fugiat eveniet necessitatibus officiis error quasi eum quos odit. Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit. Amet officiis repellendus veniam, deserunt alias soluta praesentium, numquam repudiandae corporis, facilis quas? Optio eligendi cum, suscipit quibusdam quasi exercitationem quam at. Lorem ipsum dolor sit amet
+                        consectetur, adipisicing elit. Aut totam nostrum doloremque deserunt incidunt. Doloribus necessitatibus dolorem obcaecati eveniet velit aspernatur totam, fugiat, sed optio incidunt assumenda repellendus qui ut?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end about -->
+    <!-- end home -->
+
+    <div id="ftco-menu" class="section">
+        <h1 class="section-heading">_ <samp class="ftco-m">M</samp>enu _</h1>
+        <nav>
+            <div class="nav nav-tabs d-flex justify-content-center" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link cool-link active" id="nav-breakfast-tab" data-toggle="tab" href="#nav-breakfast" role="tab" aria-controls="nav-breakfast" aria-selected="true">Breakfast</a>
+                <a class="nav-item nav-link cool-link" id="nav-lunch-tab" data-toggle="tab" href="#nav-lunch" role="tab" aria-controls="nav-lunch" aria-selected="false">Lunch</a>
+                <a class="nav-item nav-link cool-link" id="nav-dinner-tab" data-toggle="tab" href="#nav-dinner" role="tab" aria-controls="nav-dinner" aria-selected="false">Dinner</a>
+            </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-breakfast" role="tabpanel" aria-labelledby="nav-breakfast-tab">
+                <div class="container">
+                    <div class="ftco-row">
+                        <div class="ftco-item">
+                            <div class="item-img">
+                                <img src="assest/images/food-img (4).jpg" alt="">
+                                <!-- <div class="offer-box">15% off+combo</div> -->
+                                <div class="new-box">new</div>
+                            </div>
+                            <div class="title-reating">
+                                <h4 class="item-title">Biryani</h4>
+                                <div class="ftco-reating">
+                                    <a href="#" data-toggle="modal" data-target="#reviewModal">
+                                        <samp class="star"><i class="fas fa-star"></i></samp>
+                                        <samp class="reating">2/5</samp>
+                                        <samp class="count">(15)</samp>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="price-cart">
+                                <!-- <samp class="old-price">BDT 150</samp> -->
+                                <samp class="new-price">BDT 150</samp>
+                                <samp class="cart"><i class="fas fa-cart-plus"></i></samp>
+                            </div>
+                        </div>
+                        <div class="ftco-item">
+                            <div class="item-img">
+                                <img src="assest/images/food-img (3).jpg" alt="">
+                                <div class="offer-box">15% off+combo</div>
+                            </div>
+                            <div class="title-reating">
+                                <h4 class="item-title">Biryani</h4>
+                                <div class="ftco-reating">
+                                    <a href="#" data-toggle="modal" data-target="#reviewModal">
+                                        <samp class="star"><i class="fas fa-star"></i></samp>
+                                        <samp class="reating">2/5</samp>
+                                        <samp class="count">(15)</samp>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="price-cart">
+                                <samp class="old-price">BDT 150</samp>
+                                <samp class="new-price">BDT 100</samp>
+                                <samp class="cart"><i class="fas fa-cart-plus"></i></samp>
+                            </div>
+                        </div>
+                        <div class="ftco-item">
+                            <div class="item-img">
+                                <img src="assest/images/food-img (3).jpg" alt="">
+                                <!-- <div class="offer-box">15% off+combo</div> -->
+                                <div class="new-box">new</div>
+                            </div>
+                            <div class="title-reating">
+                                <h4 class="item-title">Biryani</h4>
+                                <div class="ftco-reating">
+                                    <a href="#" data-toggle="modal" data-target="#reviewModal">
+                                        <samp class="star"><i class="fas fa-star"></i></samp>
+                                        <samp class="reating">2/5</samp>
+                                        <samp class="count">(15)</samp>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="price-cart">
+                                <!-- <samp class="old-price">BDT 150</samp> -->
+                                <samp class="new-price">BDT 150</samp>
+                                <samp class="cart"><i class="fas fa-cart-plus"></i></samp>
+                            </div>
+                        </div>
+                        <div class="ftco-item">
+                            <div class="item-img">
+                                <img src="assest/images/food-img (3).jpg" alt="">
+                                <div class="offer-box">15% off+combo</div>
+                            </div>
+                            <div class="title-reating">
+                                <h4 class="item-title">Biryani</h4>
+                                <div class="ftco-reating">
+                                    <a href="#" data-toggle="modal" data-target="#reviewModal">
+                                        <samp class="star"><i class="fas fa-star"></i></samp>
+                                        <samp class="reating">2/5</samp>
+                                        <samp class="count">(15)</samp>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="price-cart">
+                                <samp class="old-price">BDT 150</samp>
+                                <samp class="new-price">BDT 100</samp>
+                                <samp class="cart"><i class="fas fa-cart-plus"></i></samp>
+                            </div>
+                        </div>
+                        <div class="ftco-item">
+                            <div class="item-img">
+                                <img src="assest/images/food-img (3).jpg" alt="">
+                                <!-- <div class="offer-box">15% off+combo</div> -->
+                                <div class="new-box">new</div>
+                            </div>
+                            <div class="title-reating">
+                                <h4 class="item-title">Biryani</h4>
+                                <div class="ftco-reating">
+                                    <a href="#" data-toggle="modal" data-target="#reviewModal">
+                                        <samp class="star"><i class="fas fa-star"></i></samp>
+                                        <samp class="reating">2/5</samp>
+                                        <samp class="count">(15)</samp>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="price-cart">
+                                <!-- <samp class="old-price">BDT 150</samp> -->
+                                <samp class="new-price">BDT 150</samp>
+                                <samp class="cart"><i class="fas fa-cart-plus"></i></samp>
+                            </div>
+                        </div>
+                        <div class="ftco-item">
+                            <div class="item-img">
+                                <img src="assest/images/food-img (3).jpg" alt="">
+                                <div class="offer-box">15% off+combo</div>
+                            </div>
+                            <div class="title-reating">
+                                <h4 class="item-title">Biryani</h4>
+                                <div class="ftco-reating">
+                                    <a href="#" data-toggle="modal" data-target="#reviewModal">
+                                        <samp class="star"><i class="fas fa-star"></i></samp>
+                                        <samp class="reating">2/5</samp>
+                                        <samp class="count">(15)</samp>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="price-cart">
+                                <samp class="old-price">BDT 150</samp>
+                                <samp class="new-price">BDT 100</samp>
+                                <samp class="cart"><i class="fas fa-cart-plus"></i></samp>
+                            </div>
+                        </div>
+                        <div class="ftco-item">
+                            <div class="item-img">
+                                <img src="assest/images/food-img (3).jpg" alt="">
+                                <!-- <div class="offer-box">15% off+combo</div> -->
+                                <div class="new-box">new</div>
+                            </div>
+                            <div class="title-reating">
+                                <h4 class="item-title">Biryani</h4>
+                                <div class="ftco-reating">
+                                    <a href="#" data-toggle="modal" data-target="#reviewModal">
+                                        <samp class="star"><i class="fas fa-star"></i></samp>
+                                        <samp class="reating">2/5</samp>
+                                        <samp class="count">(15)</samp>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="price-cart">
+                                <!-- <samp class="old-price">BDT 150</samp> -->
+                                <samp class="new-price">BDT 150</samp>
+                                <samp class="cart"><i class="fas fa-cart-plus"></i></samp>
+                            </div>
+                        </div>
+                        <div class="ftco-item">
+                            <div class="item-img">
+                                <img src="assest/images/food-img (3).jpg" alt="">
+                                <div class="offer-box">15% off+combo</div>
+                            </div>
+                            <div class="title-reating">
+                                <h4 class="item-title">Biryani</h4>
+                                <div class="ftco-reating">
+                                    <a href="#" data-toggle="modal" data-target="#reviewModal">
+                                        <samp class="star"><i class="fas fa-star"></i></samp>
+                                        <samp class="reating">2/5</samp>
+                                        <samp class="count">(15)</samp>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="price-cart">
+                                <samp class="old-price">BDT 150</samp>
+                                <samp class="new-price">BDT 100</samp>
+                                <samp class="cart"><i class="fas fa-cart-plus"></i></samp>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-lunch" role="tabpanel" aria-labelledby="nav-lunch-tab">
+                <div class="container">
+                    <div class="ftco-row">
+                        <div class="ftco-item">
+                            <div class="item-img">
+                                <img src="assest/images/food-img (4).jpg" alt="">
+                                <!-- <div class="offer-box">15% off+combo</div> -->
+                                <div class="new-box">new</div>
+                            </div>
+                            <div class="title-reating">
+                                <h4 class="item-title">Biryani</h4>
+                                <div class="ftco-reating">
+                                    <a href="#" data-toggle="modal" data-target="#reviewModal">
+                                        <samp class="star"><i class="fas fa-star"></i></samp>
+                                        <samp class="reating">2/5</samp>
+                                        <samp class="count">(15)</samp>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="price-cart">
+                                <!-- <samp class="old-price">BDT 150</samp> -->
+                                <samp class="new-price">BDT 150</samp>
+                                <samp class="cart"><i class="fas fa-cart-plus"></i></samp>
+                            </div>
+                        </div>
+                        <div class="ftco-item">
+                            <div class="item-img">
+                                <img src="assest/images/food-img (3).jpg" alt="">
+                                <div class="offer-box">15% off+combo</div>
+                            </div>
+                            <div class="title-reating">
+                                <h4 class="item-title">Biryani</h4>
+                                <div class="ftco-reating">
+                                    <a href="#" data-toggle="modal" data-target="#reviewModal">
+                                        <samp class="star"><i class="fas fa-star"></i></samp>
+                                        <samp class="reating">2/5</samp>
+                                        <samp class="count">(15)</samp>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="price-cart">
+                                <samp class="old-price">BDT 150</samp>
+                                <samp class="new-price">BDT 100</samp>
+                                <samp class="cart"><i class="fas fa-cart-plus"></i></samp>
+                            </div>
+                        </div>
+                        <div class="ftco-item">
+                            <div class="item-img">
+                                <img src="assest/images/food-img (3).jpg" alt="">
+                                <!-- <div class="offer-box">15% off+combo</div> -->
+                                <div class="new-box">new</div>
+                            </div>
+                            <div class="title-reating">
+                                <h4 class="item-title">Biryani</h4>
+                                <div class="ftco-reating">
+                                    <a href="#" data-toggle="modal" data-target="#reviewModal">
+                                        <samp class="star"><i class="fas fa-star"></i></samp>
+                                        <samp class="reating">2/5</samp>
+                                        <samp class="count">(15)</samp>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="price-cart">
+                                <!-- <samp class="old-price">BDT 150</samp> -->
+                                <samp class="new-price">BDT 150</samp>
+                                <samp class="cart"><i class="fas fa-cart-plus"></i></samp>
+                            </div>
+                        </div>
+                        <div class="ftco-item">
+                            <div class="item-img">
+                                <img src="assest/images/food-img (3).jpg" alt="">
+                                <div class="offer-box">15% off+combo</div>
+                            </div>
+                            <div class="title-reating">
+                                <h4 class="item-title">Biryani</h4>
+                                <div class="ftco-reating">
+                                    <a href="#" data-toggle="modal" data-target="#reviewModal">
+                                        <samp class="star"><i class="fas fa-star"></i></samp>
+                                        <samp class="reating">2/5</samp>
+                                        <samp class="count">(15)</samp>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="price-cart">
+                                <samp class="old-price">BDT 150</samp>
+                                <samp class="new-price">BDT 100</samp>
+                                <samp class="cart"><i class="fas fa-cart-plus"></i></samp>
+                            </div>
+                        </div>
+                        <div class="ftco-item">
+                            <div class="item-img">
+                                <img src="assest/images/food-img (3).jpg" alt="">
+                                <!-- <div class="offer-box">15% off+combo</div> -->
+                                <div class="new-box">new</div>
+                            </div>
+                            <div class="title-reating">
+                                <h4 class="item-title">Biryani</h4>
+                                <div class="ftco-reating">
+                                    <a href="#" data-toggle="modal" data-target="#reviewModal">
+                                        <samp class="star"><i class="fas fa-star"></i></samp>
+                                        <samp class="reating">2/5</samp>
+                                        <samp class="count">(15)</samp>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="price-cart">
+                                <!-- <samp class="old-price">BDT 150</samp> -->
+                                <samp class="new-price">BDT 150</samp>
+                                <samp class="cart"><i class="fas fa-cart-plus"></i></samp>
+                            </div>
+                        </div>
+                        <div class="ftco-item">
+                            <div class="item-img">
+                                <img src="assest/images/food-img (3).jpg" alt="">
+                                <div class="offer-box">15% off+combo</div>
+                            </div>
+                            <div class="title-reating">
+                                <h4 class="item-title">Biryani</h4>
+                                <div class="ftco-reating">
+                                    <a href="#" data-toggle="modal" data-target="#reviewModal">
+                                        <samp class="star"><i class="fas fa-star"></i></samp>
+                                        <samp class="reating">2/5</samp>
+                                        <samp class="count">(15)</samp>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="price-cart">
+                                <samp class="old-price">BDT 150</samp>
+                                <samp class="new-price">BDT 100</samp>
+                                <samp class="cart"><i class="fas fa-cart-plus"></i></samp>
+                            </div>
+                        </div>
+                        <div class="ftco-item">
+                            <div class="item-img">
+                                <img src="assest/images/food-img (3).jpg" alt="">
+                                <!-- <div class="offer-box">15% off+combo</div> -->
+                                <div class="new-box">new</div>
+                            </div>
+                            <div class="title-reating">
+                                <h4 class="item-title">Biryani</h4>
+                                <div class="ftco-reating">
+                                    <a href="#" data-toggle="modal" data-target="#reviewModal">
+                                        <samp class="star"><i class="fas fa-star"></i></samp>
+                                        <samp class="reating">2/5</samp>
+                                        <samp class="count">(15)</samp>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="price-cart">
+                                <!-- <samp class="old-price">BDT 150</samp> -->
+                                <samp class="new-price">BDT 150</samp>
+                                <samp class="cart"><i class="fas fa-cart-plus"></i></samp>
+                            </div>
+                        </div>
+                        <div class="ftco-item">
+                            <div class="item-img">
+                                <img src="assest/images/food-img (3).jpg" alt="">
+                                <div class="offer-box">15% off+combo</div>
+                            </div>
+                            <div class="title-reating">
+                                <h4 class="item-title">Biryani</h4>
+                                <div class="ftco-reating">
+                                    <a href="#" data-toggle="modal" data-target="#reviewModal">
+                                        <samp class="star"><i class="fas fa-star"></i></samp>
+                                        <samp class="reating">2/5</samp>
+                                        <samp class="count">(15)</samp>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="price-cart">
+                                <samp class="old-price">BDT 150</samp>
+                                <samp class="new-price">BDT 100</samp>
+                                <samp class="cart"><i class="fas fa-cart-plus"></i></samp>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-dinner" role="tabpanel" aria-labelledby="nav-dinner-tab">
+                <div class="container">
+                    <div class="ftco-row">
+                        <div class="ftco-item">
+                            <div class="item-img">
+                                <img src="assest/images/food-img (4).jpg" alt="">
+                                <!-- <div class="offer-box">15% off+combo</div> -->
+                                <div class="new-box">new</div>
+                            </div>
+                            <div class="title-reating">
+                                <h4 class="item-title">Biryani</h4>
+                                <div class="ftco-reating">
+                                    <a href="#" data-toggle="modal" data-target="#reviewModal">
+                                        <samp class="star"><i class="fas fa-star"></i></samp>
+                                        <samp class="reating">2/5</samp>
+                                        <samp class="count">(15)</samp>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="price-cart">
+                                <!-- <samp class="old-price">BDT 150</samp> -->
+                                <samp class="new-price">BDT 150</samp>
+                                <samp class="cart"><i class="fas fa-cart-plus"></i></samp>
+                            </div>
+                        </div>
+                        <div class="ftco-item">
+                            <div class="item-img">
+                                <img src="assest/images/food-img (3).jpg" alt="">
+                                <div class="offer-box">15% off+combo</div>
+                            </div>
+                            <div class="title-reating">
+                                <h4 class="item-title">Biryani</h4>
+                                <div class="ftco-reating">
+                                    <a href="#" data-toggle="modal" data-target="#reviewModal">
+                                        <samp class="star"><i class="fas fa-star"></i></samp>
+                                        <samp class="reating">2/5</samp>
+                                        <samp class="count">(15)</samp>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="price-cart">
+                                <samp class="old-price">BDT 150</samp>
+                                <samp class="new-price">BDT 100</samp>
+                                <samp class="cart"><i class="fas fa-cart-plus"></i></samp>
+                            </div>
+                        </div>
+                        <div class="ftco-item">
+                            <div class="item-img">
+                                <img src="assest/images/food-img (3).jpg" alt="">
+                                <!-- <div class="offer-box">15% off+combo</div> -->
+                                <div class="new-box">new</div>
+                            </div>
+                            <div class="title-reating">
+                                <h4 class="item-title">Biryani</h4>
+                                <div class="ftco-reating">
+                                    <a href="#" data-toggle="modal" data-target="#reviewModal">
+                                        <samp class="star"><i class="fas fa-star"></i></samp>
+                                        <samp class="reating">2/5</samp>
+                                        <samp class="count">(15)</samp>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="price-cart">
+                                <!-- <samp class="old-price">BDT 150</samp> -->
+                                <samp class="new-price">BDT 150</samp>
+                                <samp class="cart"><i class="fas fa-cart-plus"></i></samp>
+                            </div>
+                        </div>
+                        <div class="ftco-item">
+                            <div class="item-img">
+                                <img src="assest/images/food-img (3).jpg" alt="">
+                                <div class="offer-box">15% off+combo</div>
+                            </div>
+                            <div class="title-reating">
+                                <h4 class="item-title">Biryani</h4>
+                                <div class="ftco-reating">
+                                    <a href="#" data-toggle="modal" data-target="#reviewModal">
+                                        <samp class="star"><i class="fas fa-star"></i></samp>
+                                        <samp class="reating">2/5</samp>
+                                        <samp class="count">(15)</samp>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="price-cart">
+                                <samp class="old-price">BDT 150</samp>
+                                <samp class="new-price">BDT 100</samp>
+                                <samp class="cart"><i class="fas fa-cart-plus"></i></samp>
+                            </div>
+                        </div>
+                        <div class="ftco-item">
+                            <div class="item-img">
+                                <img src="assest/images/food-img (3).jpg" alt="">
+                                <!-- <div class="offer-box">15% off+combo</div> -->
+                                <div class="new-box">new</div>
+                            </div>
+                            <div class="title-reating">
+                                <h4 class="item-title">Biryani</h4>
+                                <div class="ftco-reating">
+                                    <a href="#" data-toggle="modal" data-target="#reviewModal">
+                                        <samp class="star"><i class="fas fa-star"></i></samp>
+                                        <samp class="reating">2/5</samp>
+                                        <samp class="count">(15)</samp>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="price-cart">
+                                <!-- <samp class="old-price">BDT 150</samp> -->
+                                <samp class="new-price">BDT 150</samp>
+                                <samp class="cart"><i class="fas fa-cart-plus"></i></samp>
+                            </div>
+                        </div>
+                        <div class="ftco-item">
+                            <div class="item-img">
+                                <img src="assest/images/food-img (3).jpg" alt="">
+                                <div class="offer-box">15% off+combo</div>
+                            </div>
+                            <div class="title-reating">
+                                <h4 class="item-title">Biryani</h4>
+                                <div class="ftco-reating">
+                                    <a href="#" data-toggle="modal" data-target="#reviewModal">
+                                        <samp class="star"><i class="fas fa-star"></i></samp>
+                                        <samp class="reating">2/5</samp>
+                                        <samp class="count">(15)</samp>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="price-cart">
+                                <samp class="old-price">BDT 150</samp>
+                                <samp class="new-price">BDT 100</samp>
+                                <samp class="cart"><i class="fas fa-cart-plus"></i></samp>
+                            </div>
+                        </div>
+                        <div class="ftco-item">
+                            <div class="item-img">
+                                <img src="assest/images/food-img (3).jpg" alt="">
+
+                                <div class="offer-box">15% off+combo</div>
+                                <div class="new-box">new</div>
+
+                            </div>
+                            <div class="title-reating">
+                                <h4 class="item-title">Biryani</h4>
+                                <div class="ftco-reating">
+                                    <a href="#" data-toggle="modal" data-target="#reviewModal">
+                                        <samp class="star"><i class="fas fa-star"></i></samp>
+                                        <samp class="reating">2/5</samp>
+                                        <samp class="count">(15)</samp>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="price-cart">
+                                <!-- <samp class="old-price">BDT 150</samp> -->
+                                <samp class="new-price">BDT 150</samp>
+                                <samp class="cart"><i class="fas fa-cart-plus"></i></samp>
+                            </div>
+                        </div>
+                        <div class="ftco-item">
+                            <div class="item-img">
+                                <img src="assest/images/food-img (3).jpg" alt="">
+                                <div class="offer-box">15% off+combo</div>
+                            </div>
+                            <div class="title-reating">
+                                <h4 class="item-title">Biryani</h4>
+                                <div class="ftco-reating">
+                                    <a href="#" data-toggle="modal" data-target="#reviewModal">
+                                        <samp class="star"><i class="fas fa-star"></i></samp>
+                                        <samp class="reating">2/5</samp>
+                                        <samp class="count">(15)</samp>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="price-cart">
+                                <samp class="old-price">BDT 150</samp>
+                                <samp class="new-price">BDT 100</samp>
+                                <samp class="cart"><i class="fas fa-cart-plus"></i></samp>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="ftco-gallery" class="section">
+        <h1 class="section-heading">_ <samp class="ftco-g">G</samp>allery _</h1>
+        <h4 class="gallery-title">Top 8 Choices Food From our customers</h4>
+        <div class="container">
+            <div class="ftco-row">
+                <div class="ftco-item">
+                    <div class="item-img">
+                        <a href="assest/images/food-img (3).jpg" data-lightbox="mygallery"><img src="assest/images/food-img (3).jpg" alt=""></a>
+                    </div>
+
+                </div>
+                <div class="ftco-item">
+                    <div class="item-img">
+                        <a href="assest/images/food-img (3).jpg" data-lightbox="mygallery"><img src="assest/images/food-img (3).jpg" alt=""></a>
+                    </div>
+
+                </div>
+                <div class="ftco-item">
+                    <div class="item-img">
+                        <a href="assest/images/food-img (3).jpg" data-lightbox="mygallery"><img src="assest/images/food-img (3).jpg" alt=""></a>
+                    </div>
+
+                </div>
+                <div class="ftco-item">
+                    <div class="item-img">
+                        <a href="assest/images/food-img (3).jpg" data-lightbox="mygallery"><img src="assest/images/food-img (3).jpg" alt=""></a>
+                    </div>
+
+                </div>
+                <div class="ftco-item">
+                    <div class="item-img">
+                        <a href="assest/images/food-img (3).jpg" data-lightbox="mygallery"><img src="assest/images/food-img (3).jpg" alt=""></a>
+                    </div>
+
+                </div>
+                <div class="ftco-item">
+                    <div class="item-img">
+                        <a href="assest/images/food-img (3).jpg" data-lightbox="mygallery"><img src="assest/images/food-img (3).jpg" alt=""></a>
+                    </div>
+
+                </div>
+                <div class="ftco-item">
+                    <div class="item-img">
+                        <a href="assest/images/food-img (3).jpg" data-lightbox="mygallery"><img src="assest/images/food-img (3).jpg" alt=""></a>
+                    </div>
+
+                </div>
+                <div class="ftco-item">
+                    <div class="item-img">
+                        <a href="assest/images/food-img (3).jpg" data-lightbox="mygallery"><img src="assest/images/food-img (3).jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="ftco-contact" class="section">
+        <h1 class="section-heading">_ <samp>C</samp>ontact _</h1>
+        <div class="contact-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="message-box">
+                            <form action="">
+                                <div class="form-group">
+                                    <label for="#name">Enter Your Name</label>
+                                    <input type="text" name="" id="name" class="form-control" placeholder="Enter Your Name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="#name">Enter Your Email</label>
+                                    <input type="email" name="" id="email" class="form-control" placeholder="Enter Your Email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="#message">Leave Your Message</label>
+                                    <textarea name="" id="message" placeholder="Message..." class="form-control" cols="30" rows="6"></textarea>
+                                </div>
+                                <button type="button" class="btn btn-info btn-block">Submit</button>
+                            </form>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="open-time-box">
+                            <h5 class="open-title">open Time</h5>
+                            <div class="open-time-single">
+                                Saterday- Sunday
+                                <samp>
+                                    <i>10:00</i>
+                                    Am- 
+                                    <i>11:00</i>
+                                    Pm
+                                </samp>
+                            </div>
+                            <div class="open-time-single">
+                                Saterday- Sunday
+                                <samp>
+                                    <i>10:00</i>
+                                    Am- 
+                                    <i>11:00</i>
+                                    Pm
+                                </samp>
+                            </div>
+                            <div class="open-time-single">
+                                Saterday- Sunday
+                                <samp>
+                                    <i>10:00</i>
+                                    Am- 
+                                    <i>11:00</i>
+                                    Pm
+                                </samp>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="maps-box">
+                <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14598.026557647485!2d90.4181439!3d23.8361367!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb83845e24d324677!2sOlea!5e0!3m2!1sen!2sbd!4v1583683740901!5m2!1sen!2sbd" frameborder="0"
+                    style="border:0;" allowfullscreen=""></iframe>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="top-content">
+            <div class="info ftco-ft-c">
+                <h4 class="title">Contact</h4>
+                <ul class="ftco-center">
+                    <li><i class="fas fa-map-marker-alt"></i> <samp>Address :</samp>Olea, Dhaka</li>
+                    <li><i class="fas fa-phone-alt"></i> <samp>Phone :</samp>+880434232343</li>
+                    <li><i class="fas fa-envelope"></i> <samp>Email :</samp>support@olea.com</li>
+                </ul>
+            </div>
+            <div class="instagram-img ftco-ft-c">
+                <h4 class="title">Instagram Photos</h4>
+                <ul class="img ftco-row ftco-center">
+                    <li><img src="assest/images/food-img (1).jpg" alt=""></li>
+                    <li><img src="assest/images/food-img (1).jpg" alt=""></li>
+                    <li><img src="assest/images/food-img (1).jpg" alt=""></li>
+                    <li><img src="assest/images/food-img (1).jpg" alt=""></li>
+                    <li><img src="assest/images/food-img (1).jpg" alt=""></li>
+                    <li><img src="assest/images/food-img (1).jpg" alt=""></li>
+                    <li><img src="assest/images/food-img (1).jpg" alt=""></li>
+                    <li><img src="assest/images/food-img (1).jpg" alt=""></li>
+                </ul>
+            </div>
+            <div class="social-link ftco-ft-c">
+                <h4 class="title">Social Link</h4>
+                <ul class="ftco-center">
+                    <li><a href=""><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a href=""><i class="fab fa-google-plus"></i> Google Plus</a></li>
+                    <li><a href=""><i class="fab fa-youtube"></i> Youtube</a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i> Twiter</a></li>
+                </ul>
+            </div>
+            <div class="news-box ftco-ft-c">
+                <h4 class="title">Subscribe US</h4>
+                <ul>
+                    <li>
+                        <form action="">
+                            <div class="form-group">
+                                <input type="email" name="" id="" class="form-control" placeholder="Enter Email">
+                            </div>
+                            <button type="button" class="btn btn-info">Join Us</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom-content">
+            <p>Made with <i class="fas fa-heart"></i> by <a href="https://www.facebook.com/Arafat1243">Yeasir Arafat</a></p>
+            <p><i class="far fa-copyright"></i>Copyright 2020. All Rights Reserved by Olea</p>
+
+            <p><a href="">Terms</a> <i class="fas fa-plus"></i> <a href="">Privacy</a></p>
+        </div>
+    </footer>
+
+    <!-- begain Registar Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body ftco-modal-body">
+                    <div class="form-box">
+                        <div class="button-box">
+                            <div id="ftco-btn"></div>
+                            <button type="button " id="loginbtn" class="toggle-btn active">login</button>
+                            <button type="button " id="registarbtn" class="toggle-btn">Registar</button>
+                        </div>
+                        <form action="" id="login-form" class="ftco-input-group">
+                            <div class="form-group">
+                                <label for=" ">Username</label>
+                                <input type="text" name=" " id="" class="form-control" autocomplete="off" required placeholder="Username ">
+                            </div>
+                            <div class="form-group">
+                                <label for=" ">Password</label>
+                                <input type="password" name=" " id="" class="form-control" autocomplete="off" required placeholder="Password ">
+                            </div>
+                            <div class="form-group form-check ">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label " for="exampleCheck1 ">Remember Password</label>
+                            </div>
+                            <button type="submit" class="btn btn-orange">Login</button>
+                        </form>
+                        <form action=" " id="signUp-form" class="ftco-input-group">
+                            <div class="form-group">
+                                <label for=" ">Username</label>
+                                <input type="text" name=" " id=" " class="form-control" autocomplete="off" required placeholder="Username ">
+                            </div>
+                            <div class="form-group">
+                                <label for=" ">Email</label>
+                                <input type="email" name=" " id=" " class="form-control" autocomplete="off" required placeholder="Email ">
+                            </div>
+                            <div class="form-group">
+                                <label for=" ">Password</label>
+                                <input type="password" name=" " id=" " class="form-control" autocomplete="off" required placeholder="Password ">
+                            </div>
+                            <div class="form-group form-check ">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">I agree to the <a href=" ">Terms</a> & <a href=" ">Conditions</a></label>
+                            </div>
+                            <button type="submit" class="btn btn-orange">Sign Up</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end Registar Modal -->
+    <!--begain Reservation Modal -->
+    <div class="modal fade" id="reservationModal" tabindex="-1" role="dialog" aria-labelledby="resModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <!-- <h5 class="modal-title text-center" id="resModalLabel">BOOK YOUR TABLE</h5> -->
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="title-box">
+                        <h4 class="ftco-modal-title">Reservation</h4>
+                        <samp class="ftco-modal-sm-title">book your table</samp>
+                    </div>
+                    <form>
+                        <div class="row">
+                            <div class="col">
+                                <h6>BOOK A TABLE</h6>
+                            </div>
+                            <div class="col">
+                                <h6>CONTACT DETAILS</h6>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="input-group flex-nowrap">
+                                    <input type="text" name="" autocomplete="off" id="datepicker" class="form-control" placeholder="dd/mm/yyyy">
+                                    <div class="input-group-prepend">
+                                        <label for="datepicker" class="input-group-text border-left-0 pointar"><i class="fas fa-calendar-alt"></i></label>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Name">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="input-group flex-nowrap">
+                                    <input id="timepkr" class="form-control" onfocus="showpickers('timepkr',12)" autocomplete="off" aria-describedby="addon-wrapping" placeholder="12:00 PM">
+                                    <div class="input-group-prepend">
+                                        <label class="input-group-text border-left-0" for="timepkr"><i class="fas fa-clock"></i></label>
+                                    </div>
+                                    <div class="timepicker" style="z-index: 12;"></div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <input type="email" class="form-control" placeholder="E-mail">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <select class="form-control">
+                                    <option>1 Person</option>
+                                    <option>2 Person</option>
+                                    <option>3 Person</option>
+                                    <option>4 Person</option>
+                                    <option>5 Person</option>
+                                    <option>6 Person</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Phone">
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-block ftco-btn2">Make a reservation</button>
+                </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <!--end Reservation Modal -->
+    <!-- begain shopping cart -->
+
+    <div id="ftco-cart" class="ftco-cart-box animationOut">
+        <!-- <div class="cart-cornar"></div> -->
+        <p class="ftco-cart-title">You don't have anything in your cart yet!</p>
+        <div id="cartItemBox" class="ftco-cart-body">
+            <div class="ftco-cart-item">
+                <img src="assest/images/food-img (5).jpg" alt="" srcset="">
+                <div class="text-item">
+                    <p class="item-title">biryani</p>
+                    <div>
+                        <samp>$</samp>
+                        <samp class="item-price">150</samp>
+                    </div>
+                </div>
+                <div class="item-count-box">
+                    <samp id="minus-item" class="item-icon"><i class="fas fa-minus"></i></samp>
+                    <samp class="item-count">1</samp>
+                    <samp id="plus-item" class="item-icon"><i class="fas fa-plus"></i></samp>
+                </div>
+                <button class="ftco-btn-trash"><i class="fas fa-trash"></i></button>
+            </div>
+            <div class="ftco-cart-item">
+                <img src="assest/images/food-img (5).jpg" alt="" srcset="">
+                <div class="text-item">
+                    <p class="item-title">biryani</p>
+                    <div>
+                        <samp>$</samp>
+                        <samp class="item-price">150</samp>
+                    </div>
+                </div>
+                <div class="item-count-box">
+                    <samp id="minus-item" class="item-icon"><i class="fas fa-minus"></i></samp>
+                    <samp class="item-count">1</samp>
+                    <samp id="plus-item" class="item-icon"><i class="fas fa-plus"></i></samp>
+                </div>
+                <button class="ftco-btn-trash"><i class="fas fa-trash"></i></button>
+            </div>
+        </div>
+        <div class="ftco-cart-price">
+            <samp class="ftco-mess">Total*</samp>
+            <samp class="ftco-totle">0.00</samp>
+        </div>
+        <div class="ftco-cart-footer">
+            <button type="button" class="ftco-clear">clear</button>
+            <button type="button" class="ftco-checkout">Checkout</button>
+        </div>
+    </div>
+    <!-- end shopping cart -->
+    <!-- begain review -->
+    <div class="modal fade" id="reviewModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="ftco-review-close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                </button>
+                <div class="img-box">
+                    <img src="assest/images/food-img (3).jpg" alt="" srcset="">
+                </div>
+                <div class="item-details">
+                    <h4>Biryani</h4>
+                    <div class="ftco-reating">
+                        <samp class="star"><i class="fas fa-star"></i></samp>
+                        <samp class="reating">2/5</samp>
+                        <samp class="count">(15)</samp>
+                    </div>
+                    <div class="ftco-border"></div>
+                    <samp class="review-btn">Reviews</samp>
+                </div>
+                <div class="review-body">
+                    <div class="total-review">
+                        50 Reviews
+                    </div>
+                    <div class="review-box">
+                        <div class="user-box">
+                            <h5 class="user-name">Arafat</h5>
+                            <div class="ftco-reating">
+                                <samp class="star"><i class="fas fa-star"></i></samp>
+                                <samp class="reating">2/5</samp>
+                            </div>
+                        </div>
+                        <div class="date-box">
+                            Mar 12, 2020
+                        </div>
+                        <div class="review">
+                            good food
+                        </div>
+                    </div>
+                    <div class="review-box">
+                        <div class="user-box">
+                            <h5 class="user-name">Arafat</h5>
+                            <div class="ftco-reating">
+                                <samp class="star"><i class="fas fa-star"></i></samp>
+                                <samp class="reating">2/5</samp>
+                            </div>
+                        </div>
+                        <div class="date-box">
+                            Mar 12, 2020
+                        </div>
+                        <div class="review">
+                            good food
+                        </div>
+                    </div>
+                    <div class="review-box">
+                        <div class="user-box">
+                            <h5 class="user-name">Arafat</h5>
+                            <div class="ftco-reating">
+                                <samp class="star"><i class="fas fa-star"></i></samp>
+                                <samp class="reating">2/5</samp>
+                            </div>
+                        </div>
+                        <div class="date-box">
+                            Mar 12, 2020
+                        </div>
+                        <div class="review">
+                            good food
+                        </div>
+                    </div>
+                    <div class="review-box">
+                        <div class="user-box">
+                            <h5 class="user-name">Arafat</h5>
+                            <div class="ftco-reating">
+                                <samp class="star"><i class="fas fa-star"></i></samp>
+                                <samp class="reating">2/5</samp>
+                            </div>
+                        </div>
+                        <div class="date-box">
+                            Mar 12, 2020
+                        </div>
+                        <div class="review">
+                            good food
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end review -->
+
+    <!-- jquery js -->
+    <script src="assest/jquery/jquery-3.4.1.min.js "></script>
+    <!-- bootstrap js -->
+    <script src="assest/bootstrap/js/bootstrap.min.js "></script>
+    <!-- fontawsome js -->
+    <script src="assest/fontawsome/js/all.min.js "></script>
+    <!-- datepicker -->
+    <script src="assest/bootstrap/js/bootstrap-datepicker.js"></script>
+    <!-- timepicker -->
+    <script src="custom/js/tpicker.js"></script>
+    <!-- lightbox -->
+    <script src="assest/jquery/lightbox.js"></script>
+    <!-- custom js  -->
+    <script src="custom/js/js.js "></script>
+</body>
+
+</html>
